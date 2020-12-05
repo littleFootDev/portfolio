@@ -524,3 +524,86 @@ h1 {
     height: 380px;
   }
 }
+/********************** section skills *******************/
+.section-skill {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #f1f1f1;
+  position: relative;
+  z-index: -1;
+}
+
+.grille-skill {
+  position: relative;
+  display: grid;
+  grid-template: repeat(5, 80Px) / repeat(2, 500px);
+  padding-left: 300px;
+  grid-gap: 50px;
+}
+
+.titre-skill {
+  font-size: 40px;
+  text-align: center;
+  margin: 80px 0 90px 0 ;
+  padding-left: 300px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.barre-skill {
+  height: 15px;
+  background: rgb(167, 146, 243);
+  border-radius: 5px;
+  left: 0;
+  bottom: 0;
+}
+.barre-grises {
+  position: absolute;
+  z-index: -1;
+  height: 15px;
+  background: rgb(216, 216, 216);
+  width: 500px;
+  border-radius: 5px;
+}
+.b1 {
+  width: 80%;
+}
+.b2 {
+  width: 60%;
+  background: rgb(243, 237, 146);
+}
+.b3 {
+  width: 50%;
+  background: rgb(243, 237, 146);
+}
+.b4 {
+  width: 30%;
+}
+.b5 {
+  width: 5%;
+}
+.b6 {
+  width: 70%;
+  background: rgb(243, 237, 146);
+}
+.b7 {
+  width: 20%;
+  background: rgb(243, 237, 146);
+}
+.b8 {
+  width: 0%;
+}
+.b9 {
+  width: 0%;
+}
+.b10 {
+  width: 30%;
+  background: rgb(243, 237, 146);
+}
+.label-skill {
+  font-size: 24px;
+  font-family: 'Abril Fatface', sans-serif;
+}
