@@ -607,3 +607,44 @@ h1 {
   font-size: 24px;
   font-family: 'Abril Fatface', sans-serif;
 }
+/* media competence */
+
+@media screen and (max-width: 1400px) {
+
+  .grille-skill {
+    grid-template: repeat(5, 80px) / repeat(2, 450px);
+  }
+  .barre-grises {
+    width: 450px;
+  }
+
+}
+
+@media screen and (max-width: 1300px) {
+  
+  .section-skill {
+    padding-left: O;
+
+  }
+  .titre-skill {
+    padding-left: 0;
+
+  }
+  .grille-skill {
+    grid-template: repeat(10, 80px) / 600px;
+    padding-left: 0;
+  }
+  .barre-grises {
+    width: 600px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  
+  .grille-skill {
+    grid-template: repeat(10, 80px) / 400px;
+  }
+  .barre-grises {
+    width: 400px;
+  }
+}
