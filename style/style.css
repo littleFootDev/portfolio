@@ -648,3 +648,25 @@ h1 {
     width: 400px;
   }
 }
+
+@media screen and (max-width: 450px) {
+  
+  .section-skill {
+    padding-bottom: 100ox;
+  }
+  .titre-skill {
+    font-size: 30px;
+    margin: 50px 0 60px 0;
+  }
+  .label-skill {
+    font-size: 20px;
+  }
+  .grille-skill {
+    grid-template: repeat(10, 80px) / 300px;
+    grid-gap: 40px;
+  }
+  .barre-grises {
+    width: 300px;
+  }
+
+}
