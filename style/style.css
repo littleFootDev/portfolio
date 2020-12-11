@@ -348,6 +348,7 @@ h1 {
   font-size: 27px;
   display: inline;
 }
+
 /* media presentation */
 
 @media screen and (max-width: 1300px){
@@ -414,6 +415,136 @@ h1 {
   }
 }
 
+/***** experience ****/
+
+.experience {
+  width: calc(100% - 300px);
+  height: auto;
+  margin-left: auto;
+  padding-bottom: 100px;
+}
+
+.titre-experience {
+  text-align: center;
+  margin: 70px 0;
+  font-size: 40px;
+  color: #333;
+}
+.cont-experience {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.barre-vertical {
+  height: 800px;
+  width: 5px;
+  background: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  left: 550px;
+}
+.boule-ico {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid #333;
+  background: #f1f1f1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.boule-ico img {
+  width: 25px;
+}
+
+.flex-contaigner-barre {
+  width: 1000px;
+  flex-shrink: 1;
+  height: 1000px;
+  position: relative;
+}
+
+.block-exp {
+  width: 500px;
+  height: 200px;
+  margin-bottom: 177px;
+  cursor: pointer;
+  border: 1px solid #333;
+  position: relative;
+}
+
+.contenu-block-exp{
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  border: 2px solid black;
+  background: white;
+  transition: transform 0.25s ease-in-out;
+  position: relative;
+  transform: translate(10px, -10px);
+}
+.contenu-block-exp:hover {
+  transform: translate(0,0);
+}
+
+.block1 {
+  background: #fb97a0;
+  left: -300Px;
+}
+.block2 {
+  background: #bfe2ca;
+  left: 260px;
+}
+.block3 {
+  background: #a6daef;
+  left: -300px;
+}
+
+.titre-block-exp {
+  font-family: 'Abril Fatface', sans-serif;
+  font-size: 25px;
+  padding-bottom: 10px;
+}
+/* media experience */
+@media screen and (max-width: 1300px) {
+  .experience {
+    width: 100%;
+  }
+  .barre-vertical {
+    left: 630px;
+  }
+  
+}
+@media screen and (max-width: 1000px) {
+  .barre-vertical {
+    height: 1000px;
+    left: 30px;
+  }
+  .block-exp {
+    height: 250px;
+    margin-bottom: 37,5;
+    left: 70px;
+    width: calc(100% - 100px);
+  }
+  @media screen and (max-width: 520px){
+    .txt-experience {
+    font-size: 16px ;
+    }
+    .block-exp {
+      height: 400px;
+    }
+    .barre-vertical {
+      height: 1200px;
+    }
+  }
+  @media screen and (max-width: 320px) {
+    .txt-experience {
+      font-size: 15px;
+    }
+  }
 /*********************** section projet *******************/
 .projet {
   width: 100%;
