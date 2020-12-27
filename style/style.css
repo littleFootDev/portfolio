@@ -529,6 +529,7 @@ h1 {
     left: 70px;
     width: calc(100% - 100px);
   }
+}
   @media screen and (max-width: 520px){
     .txt-experience {
     font-size: 16px ;
@@ -798,5 +799,4 @@ h1 {
   }
   .barre-grises {
     width: 300px;
-  }
-} 
+  }}
