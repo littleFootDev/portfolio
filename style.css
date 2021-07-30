@@ -12,6 +12,7 @@ body {
   font-family: "Poppins", sans-serif;
   background: #f1f1f1;
   font-size: 62.5%;
+  max-width: 100%;
 }
 .panneau {
   position: absolute;
@@ -211,6 +212,7 @@ h1 {
 .txt-animation {
   font-size: 3em;
   margin: 1em 0 1em 4em;
+  color: #fff;
 }
 
 .btn-acc {
@@ -424,6 +426,8 @@ h1 {
   text-align: center;
   margin: 50px 0 70px 0;
   padding-left: 300px;
+  padding-top: 30px;
+  font-family: "Abril Fatface", sans-serif;
 }
 .container-presentation {
   display: flex;
@@ -549,8 +553,10 @@ h1 {
 .titre-port {
   text-align: center;
   padding: 50px 0;
-  font-size: 50px;
+  font-size: 40px;
   padding-left: 300px;
+  padding-top: 50px;
+  font-family: "Abril Fatface", sans-serif;
 }
 .cont-portfolio {
   width: 100%;
@@ -646,5 +652,80 @@ h1 {
 @media screen and (max-width: 340px) {
   .items {
     height: 380px;
+  }
+}
+/* section range */
+.section-range {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 200px;
+  border-bottom: 1px dashed #333;
+  background: #637d96;
+  color: #f1f1f1;
+  position: relative;
+  margin-top: 100px;
+}
+.titre-exp {
+  font-family: "Abril Fatface", sans-serif;
+  font-size: 40px;
+  text-align: center;
+  margin: 80px 0 90px 0;
+  padding-left: 300px;
+  padding-top: 40px;
+}
+.grille-skill {
+  display: grid;
+  grid-template: repeat(2, 100px) / repeat(2, 500px);
+  grid-gap: 50px;
+  padding-left: 450px;
+}
+.range-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.label-skill {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+/* Media Range */
+@media screen and (max-width: 1400px) {
+  .grille-skill {
+    grid-template: repeat(2, 100px) / repeat(2, 450px);
+  }
+}
+@media screen and (max-width: 1300px) {
+  .section-range {
+    padding-left: 0;
+  }
+  .titre-exp {
+    padding-left: 0;
+  }
+  .grille-skill {
+    grid-template: repeat(4, 100px) / 600px;
+    padding-left: 0;
+  }
+}
+@media screen and (max-width: 700px) {
+  .grille-skill {
+    grid-template: repeat(4, 100px) / 400px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .section-range {
+    padding-bottom: 100px;
+  }
+  .titre-exp {
+    font-size: 30px;
+    margin: 50px 0 60px 0;
+  }
+  .grille-skill {
+    grid-template: repeat(4, 100px) / 300px;
+    grid-gap: 40px;
   }
 }
