@@ -53,5 +53,20 @@ typewriter
   .pauseFor(1000)
   .deleteChars(7)
   .typeString('<span style="color: purple"> C#</span> !')
-
   .start();
+
+//   Animation Contact Form
+
+const inputField = document.querySelectorAll("input");
+
+for (let i = 0; i < inputField.length; i++) {
+  let field = inputField[i];
+
+  field.addEventListener("input", (e) => {
+    if (e.target.value !== "") {
+      e.target.parentNode.classList.add("animation");
+    } else if (e.target.value === "") {
+      e.target.parentNode.classList.remove("animation");
+    }
+  });
+}
